@@ -1,4 +1,4 @@
-- [LINK TO THE WEB-PAGE](https://dekshut.github.io/CocktailDB/)
+- [LINK TO THE WEB-PAGE](https://dekshut.github.io/WeatherForecast/)
 
 In order to create this project, I have used following technology and approaches:
 
