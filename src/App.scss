@@ -1,0 +1,40 @@
+@import 'styles/variables';
+
+.container {
+  max-width: 1400px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+  background-color: $light;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar:hover {
+  background-color: $light;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $blue;
+  border-radius: 10px;
+}
+
+body, html{
+  background: $body;
+
+  &::-webkit-scrollbar {
+    border-radius: 0px;
+  }
+  
+  &::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+  }
+}
+
+* {
+  color: $text;
+}

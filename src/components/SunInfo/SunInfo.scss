@@ -1,0 +1,31 @@
+.content {
+    &__sun {
+        display: flex;
+        align-items: center;
+        background: #ffe4c6;
+        box-shadow: 2px 2px 50px 1px rgb(247, 225, 200);
+        border-radius: 20px;
+        padding: 20px;
+        width: 600px;
+        justify-content: space-between;
+        margin: 0 auto 50px;
+    }
+
+    &__day {
+        font-size: 40px;
+    }
+
+    &__sun-info {
+        display: flex;
+    }
+
+    &__sun-img {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+    }
+
+    &__sun-name {
+        color: #b4b4b4;
+    }
+}

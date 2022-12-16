@@ -1,0 +1,12 @@
+.day-slider{
+    // padding-top: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 60px;
+    display: flex;
+    overflow: auto;
+
+    &-wrapper{  
+        max-width: 1400px;
+        overflow: hidden;
+    }
+}

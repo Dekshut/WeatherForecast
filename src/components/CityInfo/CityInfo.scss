@@ -1,0 +1,35 @@
+.header {
+    &__data-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      margin: 40px 0;
+    }
+  
+    &__current-time {
+      font-size: 24px;
+    }
+  
+    &__current-data {
+      font-size: 24px;
+    }
+
+    &__city{
+      font-size: 24px;
+      font-weight: 700;
+    }
+  
+    &__city-name {
+      display: flex;
+      align-items: center;
+    }
+  
+    &__city-flag {
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      margin-left: 5px;
+      border: 1px solid #2c5282;
+    }
+  }

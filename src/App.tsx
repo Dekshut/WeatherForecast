@@ -1,24 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import './App.scss';
+import { CityInfo } from './components/CityInfo/CityInfo';
+import { DayCard } from './components/DayCard/DayCard';
+import { DaySlider } from './components/DaySlider/DaySlider';
+import { Header } from './components/Header/Header';
+import { SunInfo } from './components/SunInfo/SunInfo';
+import { Timestamps } from './components/Timestamps/Timestamps';
+import { getForecast } from './redux/slices/weatherSlice';
+import { AppDispatch, RootState } from './redux/store';
 
 function App() {
+  const dispatch = useDispatch<AppDispatch>()
+
+  useEffect(() => {
+    dispatch(getForecast('q=odesa'))
+  }, [])
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <CityInfo />
+
+      <DaySlider />
+      <SunInfo />
+      <Timestamps />
+
+      <ToastContainer autoClose={2000}/>
     </div>
   );
 }
