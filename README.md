@@ -10,6 +10,4 @@ In order to create this project, I have used following technology and approaches
 
 ✅ Typescript
 
-✅ Styled Components
-
 You can contact me using these links:
